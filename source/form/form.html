@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <form action="submit_diet_plan.php" method="POST" id="diet-form">
+        <h2>Sign Up</h2>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Mobile No.:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <div class="gender-options">
+            <label><input type="radio" id="male" name="gender" value="male" required> Male</label>
+            <label><input type="radio" id="female" name="gender" value="female" required> Female</label>
+            <label><input type="radio" id="other" name="gender" value="other" required> Other</label>
+        </div>
+
+        <label for="medical">Any Medical Issue (Optional):</label>
+        <textarea id="medical" name="medical" rows="3"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
